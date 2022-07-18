@@ -1,0 +1,95 @@
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+body {
+  background-image: url("sky.webp");
+  background-size: cover;
+}
+
+img {
+  height: 100px;
+  width: 200px;
+  object-fit: cover;
+  position: relative;
+  border-radius: 10%;
+}
+
+.button:hover {
+  background-color: black;
+  color: rgb(7, 12, 16);
+  background-color: aliceblue;
+}
+
+a.menu {
+  color: rgb(250, 248, 248);
+  border-radius: 10%;
+  text-transform: uppercase;
+  position: relative;
+}
+
+a.menu::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background: rgb(67, 193, 212);
+  left: 0;
+  bottom: -5;
+  transition: 1s;
+}
+
+a.menu:hover::after {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(15, 15, 16);
+}
+
+.button {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(151, 202, 230);
+  color: rgb(20, 10, 154);
+  border-color: rgb(250, 249, 249);
+  cursor: grab;
+  border-radius: 10px;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+h1 {
+  color: rgb(244, 91, 175);
+  text-decoration-line: underline;
+  text-indent: 10%;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-top: 20px;
+}
+
+p {
+  color: rgb(250, 243, 248);
+  font-size: large;
+  padding-left: 20%;
+  padding-right: 20%;
+}
